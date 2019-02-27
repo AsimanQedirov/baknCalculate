@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="calculator py-5">
+        <div class="calculator-div container-fluid pt-lg-4">
+            <h3>Calculator</h3>
+            <div class="row py-lg-5">
+                <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 px">
+                    <label for="amount">AMOUNT</label>
+                    <input type="text" class="form-control mb-lg-4" id="amount">
+                    <label for="sel1">CURRENCY</label>
+                    <select class="form-control" id="sel1">
+                        <option>AZN</option>
+                        <option>USD</option>
+                    </select>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 px">
+                    <label for="duration">DURATION</label>
+                    <select class="form-control mb-lg-4" id="duration">
+                        <option>6 months</option>
+                        <option>12 months</option>
+                        <option>24 months</option>
+                    </select>
+                    <label for="interest">INTEREST PAYMENT</label>
+                    <select class="form-control" id="interest">
+                        <option>Monthly withdrawal</option>
+                        <option>At the end of term</option>
+                    </select>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12 px">
+                    <div class="result-div">
+                        <p id="result">Result</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 mb-3 col-sm-12 col-xs-12">
+                                <p class="m-0 icon"><span id="earning">0</span><i class="fas fa-dollar-sign"></i></p>
+                                <p class="m-0 paragraph">Earnings</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <p class="m-0 icon"><span id="total">0</span><i class="fas fa-dollar-sign"></i></p>
+                                <p class="m-0 paragraph">Total amount</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
